@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="120"
+        Title="MainWindow" Height="620" Width="120"
         Topmost="True"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize" Background="#FF398990">
 
     <Grid>
-        <Button x:Name="btnSwitchMouse" Content="Mouse" HorizontalAlignment="Stretch" Margin="0,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchMouse_Click">
+        <Button x:Name="btnSwitchMouse" Content="Mouse" Margin="20,59,20,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchMouse_Click" Background="#FFB4E2E8">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" 
@@ -23,7 +23,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnSwitchPen" Content="Pen" HorizontalAlignment="Stretch" Margin="0,120,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchPen_Click">
+        <Button x:Name="btnSwitchPen" Content="Pen" Margin="20,159,20,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchPen_Click" Background="#FFB4E2E8">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" 
@@ -36,8 +36,8 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Slider x:Name="sldrPenThickness" HorizontalAlignment="Stretch" Minimum="1" Maximum="10" Value="1" Margin="0,205,0,0" VerticalAlignment="Top" Width="80" ValueChanged="sldrPenThickness_ValueChanged"/>
-        <Button x:Name="btnSwitchEraser" Content="Eraser" Margin="20,350,20,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchEraser_Click">
+        <Slider x:Name="sldrPenThickness" Minimum="1" Maximum="10" Value="1" Margin="20,244,20,0" VerticalAlignment="Top" Width="80" ValueChanged="sldrPenThickness_ValueChanged"/>
+        <Button x:Name="btnSwitchEraser" Content="Eraser" Margin="20,389,20,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchEraser_Click" Background="#FFB4E2E8">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" 
@@ -50,7 +50,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnSwitchColor" Content="Color" Margin="20,450,20,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchColor_Click">
+        <Button x:Name="btnSwitchColor" Content="Color" Margin="20,489,20,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchColor_Click" Background="#FFB4E2E8">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" 
@@ -63,7 +63,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="btnSwitchMarker" Content="Marker" Margin="0,235,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchMarker_Click" >
+        <Button x:Name="btnSwitchMarker" Content="Marker" Margin="20,274,20,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchMarker_Click" Background="#FFB4E2E8" >
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" 
@@ -76,7 +76,9 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Slider x:Name="sldrMarkerThickness" Minimum="20" Maximum="40" Value="1" Margin="0,320,0,0" VerticalAlignment="Top" Width="80" ValueChanged="sldrMarkerThickness_ValueChanged" />
-        <Label Content="developed by Esra ÖZTÜRK" HorizontalAlignment="Center"  Margin="0,548,0,0" VerticalAlignment="Bottom" Width="120" FontSize="9"/>
+        <Slider x:Name="sldrMarkerThickness" Minimum="20" Maximum="40" Value="1" Margin="20,359,20,0" VerticalAlignment="Top" Width="80" ValueChanged="sldrMarkerThickness_ValueChanged" />
+        <Label Content="developed by Esra ÖZTÜRK" HorizontalAlignment="Center"  Margin="0,548,0,0" VerticalAlignment="Bottom" Width="120" FontSize="9" Foreground="White" Background="Transparent"/>
+        <Label Content="ScreenPen" HorizontalAlignment="Center" Height="39" VerticalAlignment="Top" Width="120" FontSize="18" HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center" Background="#FF2D5569" Foreground="White"/>
     </Grid>
 </Window>
