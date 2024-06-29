@@ -1,0 +1,82 @@
+﻿<Window x:Class="Pen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="120"
+        Topmost="True"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <Button x:Name="btnSwitchMouse" Content="Mouse" HorizontalAlignment="Stretch" Margin="0,20,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchMouse_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnSwitchPen" Content="Pen" HorizontalAlignment="Stretch" Margin="0,120,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchPen_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Slider x:Name="sldrPenThickness" HorizontalAlignment="Stretch" Minimum="1" Maximum="10" Value="1" Margin="0,205,0,0" VerticalAlignment="Top" Width="80" ValueChanged="sldrPenThickness_ValueChanged"/>
+        <Button x:Name="btnSwitchEraser" Content="Eraser" Margin="20,350,20,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchEraser_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnSwitchColor" Content="Color" Margin="20,450,20,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchColor_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnSwitchMarker" Content="Marker" Margin="0,235,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="btnSwitchMarker_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Slider x:Name="sldrMarkerThickness" Minimum="20" Maximum="40" Value="1" Margin="0,320,0,0" VerticalAlignment="Top" Width="80" ValueChanged="sldrMarkerThickness_ValueChanged" />
+        <Label Content="developed by Esra ÖZTÜRK" HorizontalAlignment="Center"  Margin="0,548,0,0" VerticalAlignment="Bottom" Width="120" FontSize="9"/>
+    </Grid>
+</Window>
